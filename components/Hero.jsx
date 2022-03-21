@@ -62,23 +62,23 @@ const Hero = () => {
         </div>
       </div>
 
-      <section class="text-white body-font  bg-teal-900">
-        <div class="container max-w-6xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+      <section className="text-white body-font  bg-teal-900">
+        <div className="container max-w-6xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
               Treat your counseller as your
-              <br class="hidden lg:inline-block" />
+              <br className="hidden lg:inline-block" />
               <span className="italic">BEST FRIEND</span>
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               Mental health is not a thing we should ignore, its the most
               important factor in our life which helps us to grow in our career,
               studied
             </p>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              class="object-cover object-center rounded-xl"
+              className="object-cover object-center rounded-xl"
               alt="hero"
               src="https://dummyimage.com/720x600"
             />
@@ -86,22 +86,22 @@ const Hero = () => {
         </div>
       </section>
 
-      <section class="text-white body-font  bg-teal-900">
-        <div class="container max-w-6xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <section className="text-white body-font  bg-teal-900">
+        <div className="container max-w-6xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
-              class="object-cover object-center rounded-xl"
+              className="object-cover object-center rounded-xl"
               alt="hero"
               src="https://dummyimage.com/720x600"
             />
           </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
               taking counselling does not mean
-              <br class="hidden lg:inline-block" />
+              <br className="hidden lg:inline-block" />
               <span className="italic">You are Ill</span>
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed">
               People always htinks that talking about personal mental health to
               anyone will not understand the situation person is suffering
               through, but this is not the right, if you are taking counselling

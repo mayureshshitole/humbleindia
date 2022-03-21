@@ -28,7 +28,7 @@ function BlogSection() {
                     </div>
                     <div className="p-6 shadow-lg w-11/12 mx-auto -mt-20 bg-white rounded relative">
                         <p className="uppercase text-sm text-teal-900 text-center pb-3">Work</p>
-                        <p className="text-lg text-gray-800 text-center pb-3">I'm a greater believer in luck, and I find the harder I work the more I have of it.</p>
+                        <p className="text-lg text-gray-800 text-center pb-3">I am a greater believer in luck, and I find the harder I work the more I have of it.</p>
                         <p className="text-sm text-gray-800 text-center">
                             May 13, 2019 by
                             <a href="javascript:void(0)">
