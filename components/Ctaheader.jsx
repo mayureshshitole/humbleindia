@@ -78,4 +78,6 @@ const CtaHeader = () => {
   );
 };
 
+console.log("hello");
+
 export default CtaHeader;
