@@ -3,7 +3,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { firebaseApp } from "../firebase/clientApp";
 import { useRouter } from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
-import CtaHeader from "./CtaHeader";
+import CtaHeader from "./Ctaheader";
 import BlogSection from "./BlogSection";
 import Stats from "./Stats";
 
