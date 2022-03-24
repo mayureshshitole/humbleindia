@@ -16,7 +16,7 @@ import {
   BsFillPenFill,
   BsFillCheckCircleFill,
   BsFillPersonCheckFill,
-} from "react-icons/Bs";
+} from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 import { GrMail } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
