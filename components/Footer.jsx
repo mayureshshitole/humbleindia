@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div>
-      <footer className="text-gray-600 body-font">
+      <footer className="text-gray-600 body-font ">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <div className="flex justify-center items-center space-x-2 ">
             <div className="p-0.5 rounded-full bg-white flex items-center hover:animate-slowSpin">

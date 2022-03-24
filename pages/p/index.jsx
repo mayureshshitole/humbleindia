@@ -7,9 +7,11 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { getAuth } from "firebase/auth";
 import { useState } from "react/cjs/react.production.min";
+import PhycologistCard from "../../components/PhycologistCard";
+import { Fade, Zoom } from "react-reveal";
 
 const MainPage = () => {
-  const psychologistsData= [
+  const psychologistsData = [
     {
       username: "@mehak",
       name: "Ms Mehak Bhandari",
@@ -38,7 +40,7 @@ const MainPage = () => {
         },
       ],
       places: ["Mumbai", "Delhi", "Bangalore"],
-      whatsapp: "+91 9915556777",
+      whatsapp: "+919915556777",
       appointmentLink: "https://calendly.com/goyalaarush92/30min",
     },
     {
@@ -176,8 +178,41 @@ const MainPage = () => {
           <title>Psychologist</title>
         </Head>
         <section className="bg-teal-900 text-white min-h-screen p-1">
-          <div className="mt-20">
-            Hello <span className="text-2xl italic">{user.displayName}!</span>
+          <div className="max-w-6xl mx-auto">
+            <Fade left>
+              <div className="mt-20">
+                Hello,{" "}
+                <span className="text-2xl italic">
+                  {user.displayName.split(" ")[0]}!
+                </span>
+              </div>
+            </Fade>
+            <Fade>
+              <p className="ml-4 text-center mt-2">
+                Get the direct contact of Best Psychologist in India in one
+                click. These bunch of people are best in their job and will help
+                you to resolve your problems.
+              </p>
+            </Fade>
+          </div>
+          <div>
+            <div class="flex justify-center mt-3">
+              <div class="mb-3 w-5/6 md:w-96">
+                <input
+                  type="text"
+                  class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  id="exampleFormControlInput1"
+                  placeholder=" Search by Name or Location "
+                />
+              </div>
+            </div>
+          </div>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-3 px-2">
+            {psychologistsData.map((items, index) => (
+              <div key={index}>
+                <PhycologistCard psych={items} />
+              </div>
+            ))}
           </div>
         </section>
       </>

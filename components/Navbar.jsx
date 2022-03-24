@@ -11,7 +11,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 const Navbar = () => {
   const links = [
     { name: "home", link: "/" },
-    { name: "Psychologist", link: "/Psychologist" },
+    { name: "Psychologist", link: "/p" },
     { name: "blogs", link: "/blogs" },
   ];
 
@@ -94,12 +94,13 @@ const Navbar = () => {
         <ul
           className={`md:flex  bg-teal-900 rounded-b-lg  md:items-center justify-between md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${
             open
-              ? "top-16 opacity-100 border-b-2 border-b-gray-200"
+              ? "top-16 opacity-100 border-b-2 border-b-gray-200 md:border-0"
               : "top-[-490px] opacity-0 md:opacity-100"
           }`}
         >
           {links.map((links) => (
             <li
+              onClick={() => setOpen(!open)}
               key={links.name}
               className="md:ml-8 md:my-0 my-7 text-xl font-semibold capitalize hover:text-teal-500 transition duration-300 ease-in-out"
             >
@@ -133,7 +134,7 @@ const Navbar = () => {
                   className="rounded-full"
                 />
                 <h2 className="ml-2  text-xl font-semibold capitalize group-hover:text-teal-500 transition duration-300 ease-in-out">
-                  {user.displayName}
+                  {user.displayName.split(" ")[0]}
                 </h2>
                 <IoLogOut onClick={signout} fontSize={40} className="ml-2" />
               </div>
