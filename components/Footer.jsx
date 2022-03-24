@@ -15,14 +15,14 @@ const Footer = () => {
                 layout="intrinsic"
               />
             </div>
-            <h1 className="uppercase cursor-pointer text-green-400 font-semibold first-letter:text-3xl first-letter:italic first-letter:font-extrabold transform hover:scale-105 transition duration-300 ease-in-out">
+            <h1 className="uppercase cursor-pointer text-teal-900 font-semibold first-letter:text-3xl first-letter:italic first-letter:font-extrabold transform hover:scale-105 transition duration-300 ease-in-out">
               Humble India
             </h1>
           </div>
           <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
             &copy; 2022 Humble —
             <a
-              className="text-gray-600 ml-1"
+              className="text-teal-900 ml-1"
               rel="noopener noreferrer"
               target="_blank"
             >

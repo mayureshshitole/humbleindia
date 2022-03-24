@@ -2,13 +2,13 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <section className=" bg-teal-900 pt-16">
+    <section className=" bg-teal-900 pt-8">
       <div className="max-w-7xl mx-auto container">
         <div className="flex items-center flex-col px-4">
           <p className="uppercase text-lg text-center text-white leading-normal">
             in few easy steps
           </p>
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-center leading-tight text-white lg:w-7/12 md:w-9/12 pt-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-center leading-tight text-white lg:w-7/12 md:w-9/12 pt-4">
             Find the solution to your problems &amp; live stress free
           </h2>
         </div>
@@ -37,12 +37,11 @@ const Feature = () => {
             </div>
             <div className="w-10/12">
               <h4 className="text-lg font-bold leading-tight text-white">
-                Ready to use components
+                Comunity and COntent related to Your Mental Health
               </h4>
               <p className="text-base text-white leading-normal pt-2">
-                It provides a very simple start, no need to write a lot of code,
-                you just import it and start the primitive components and create
-                the ones you need.
+                A good community helping each other with bunch of related
+                content provided by us.
               </p>
             </div>
           </div>
@@ -69,12 +68,11 @@ const Feature = () => {
             </div>
             <div className="w-10/12">
               <h4 className="text-lg font-bold leading-tight text-white">
-                Hight Quality UI you can reply on
+                Qualified Preofessionals
               </h4>
               <p className="text-base text-white leading-normal pt-2">
-                Modify the visual appearance of your site – including colors,
-                fonts, margins and other style-related properties – with a
-                sophisticated style.
+                We have the best professionals - licensed and verified, who can
+                help you heal!
               </p>
             </div>
           </div>
@@ -102,12 +100,11 @@ const Feature = () => {
             </div>
             <div className="w-10/12">
               <h4 className="text-lg font-bold leading-tight text-white">
-                Coded by Developers for Developers
+                For us, Privacy is the King
               </h4>
               <p className="text-base text-white leading-normal pt-2">
-                Instead of just giving you the tools to create your own site,
-                they offer you a list of themes you can choose from. Thus a
-                handy product.
+                Secure and private discussions your psychologist and no tracking
+                of your private talks.
               </p>
             </div>
           </div>
@@ -136,12 +133,11 @@ const Feature = () => {
             </div>
             <div className="w-10/12">
               <h4 className="text-lg font-bold leading-tight text-white">
-                The Last UI kit you’ll ever need
+                Online, Anywhere and Everywhere
               </h4>
               <p className="text-base text-white leading-normal pt-2">
-                We have chosen the bright color palettes that arouse the only
-                positive emotions. The kit that simply assures to be loved by
-                everyone.
+                Choose your free time to consult, get call from our experts as
+                per your time
               </p>
             </div>
           </div>

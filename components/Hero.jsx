@@ -93,7 +93,7 @@ const Hero = () => {
                   career, studied
                 </p>
               </div>
-              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 rounded-2xl p-2 bg-white">
+              <div className="lg:max- -lg lg:w-full md:w-1/2 w-5/6 rounded-2xl p-2 bg-white">
                 <Image
                   src={"/graphics/friend.svg"}
                   width={720}

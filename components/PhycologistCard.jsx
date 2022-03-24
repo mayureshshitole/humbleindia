@@ -5,14 +5,18 @@ import { FiPhoneCall } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import { GoLocation } from "react-icons/go";
 import { Zoom } from "react-reveal";
+import { useRouter } from "next/router";
 
 const PhycologistCard = ({ psych }) => {
-  console.log(psych);
+  const router = useRouter();
   return (
     <>
       <Zoom>
         <div className="bg-white text-teal-900 flex flex-col justify-center items-center rounded-xl p-2">
           <Image
+            onClick={() => {
+              router.push(`/p/${psych.username}`);
+            }}
             className="border-2 border-teal-900 "
             src={psych.avatar}
             width={100}
@@ -20,11 +24,33 @@ const PhycologistCard = ({ psych }) => {
             layout="intrinsic"
             alt={`profile image for phychologist ${psych.name} on the humble india platform`}
           />
-          <h1 className="text-2xl font-bold border-b-2 border-teal-600 w-full text-center ">
+
+          <h1
+            onClick={() => {
+              router.push(`/p/${psych.username}`);
+            }}
+            className="text-2xl font-bold border-b-2 border-teal-600 w-full text-center "
+          >
             {psych.name}
           </h1>
-          <h2 className="mt-2 font-medium text-teal-600">{psych.username}</h2>
-          <p className="text-base text-center">{psych.description}</p>
+
+          <h2
+            onClick={() => {
+              router.push(`/p/${psych.username}`);
+            }}
+            className="mt-2 font-medium text-teal-600"
+          >
+            @{psych.username}
+          </h2>
+
+          <p
+            onClick={() => {
+              router.push(`/p/${psych.username}`);
+            }}
+            className="text-base text-center"
+          >
+            {psych.description}
+          </p>
           <div className="flex flex-row p-1 gap-2 text-sm mt-2 ">
             {psych.places.map((p, index) => (
               <div
@@ -44,7 +70,13 @@ const PhycologistCard = ({ psych }) => {
                 <FiPhoneCall fontSize={20} className="ml-2" />{" "}
               </button>
             </Link>
-            <button className="flex justify-center items-center shadow shadow-teal-900 w-28 py-1 bg-teal-600 rounded-lg text-white">
+
+            <button
+              onClick={() => {
+                router.push(`/p/${psych.username}`);
+              }}
+              className="flex justify-center items-center shadow shadow-teal-900 w-28 py-1 bg-teal-600 rounded-lg text-white"
+            >
               <span className="font-semibold">Profile</span>{" "}
               <CgProfile fontSize={20} className="ml-2" />{" "}
             </button>

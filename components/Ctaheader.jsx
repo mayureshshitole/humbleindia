@@ -9,9 +9,10 @@ const CtaHeader = () => {
             <div>
               <div className="flex flex-wrap items-center md:flex-row flex-col-reverse">
                 <div className="md:w-2/3 w-full pb-6 md:pb-0 md:pr-6 flex-col md:block flex  items-center justify-center md:pt-0 pt-4 ">
-                  <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-5xl lg:w-10/12 text-teal-900 font-black leading-tight md:text-left text-center ">
-                    Host your web ideas with us and start building the next big
-                    thing
+                  <h1 className="text-lg md:text-3xl  lg:w-10/12 text-teal-900 font-black leading-tight md:text-left text-center ">
+                    Counselling Therapy Sessions With Licensed and Verified
+                    Experts, English And All Regional Indian Languages, 100%
+                    Private and Secure Platform
                   </h1>
                   <button className="mt-5 lg:mt-12 py-3 lg:py-4 px-4 uppercase lg:px-6 bg-teal-900 font-bold text-white rounded-lg text-sm lg:text-lg xl:text-xl hover:opacity-90">
                     Join the community

@@ -10,134 +10,10 @@ import { useState } from "react/cjs/react.production.min";
 import PhycologistCard from "../../components/PhycologistCard";
 import { Fade, Zoom } from "react-reveal";
 
-const MainPage = () => {
-  const psychologistsData = [
-    {
-      username: "@mehak",
-      name: "Ms Mehak Bhandari",
-      title: "Mental Health Facilitator",
-      avatar:
-        "https://res.cloudinary.com/dywkbcfp5/image/upload/w_200,h_200,c_thumb,g_face,f_auto,r_max,bo_2px_solid_white/v1622023412/ltzgyhkx2jc5ov9omzeq.png",
-      description:
-        "I focus on a solution-oriented approach to help individuals overcome their circumstances and realise their true potential to lead a healthy and fulfilling life.",
-      available: true,
-      price: 2000,
-      sessionDuration: 30,
-      rating: 4.5,
-      verified: true,
-      serviceDescription: `
-        I work with clients to help them identify patterns in their behavior which cause problems, put them in a perspective and then facilitate unlearning them.
-    
-        By engaging with you, by attempting to enlighten that sensitive part of your personality that you have suppressed, I can make you conscious of what it will take for you to be happy. You cannot change the world but that one small change that you bring about in your attitude can sometimes help change your entire life.
-        
-        My goal is to empower you to choose how to respond to your environment judiciously instead of being a victim to it. `,
-      education: [
-        {
-          degree: "B.Sc. Psychology",
-          school: "University of Delhi",
-          place: "Delhi",
-          year: "2012",
-        },
-      ],
-      places: ["Mumbai", "Delhi", "Bangalore"],
-      whatsapp: "+919915556777",
-      appointmentLink: "https://calendly.com/goyalaarush92/30min",
-    },
-    {
-      username: "@payal",
-      name: "Ms Payal Saxena",
-      title: "Mental Health Facilitator",
-      avatar:
-        "https://res.cloudinary.com/dywkbcfp5/image/upload/w_200,h_200,c_thumb,g_face,f_auto,r_max,bo_2px_solid_white/v1635315509/huiy6l1t7lzwntqyuw2p.png",
-      description:
-        "I focus on a solution-oriented approach to help individuals overcome their circumstances and realise their true potential to lead a healthy and fulfilling life.",
-      available: true,
-      price: 2000,
-      sessionDuration: 30,
-      rating: 4.5,
-      verified: true,
-      serviceDescription: `
-        I work with clients to help them identify patterns in their behavior which cause problems, put them in a perspective and then facilitate unlearning them.
-    
-        By engaging with you, by attempting to enlighten that sensitive part of your personality that you have suppressed, I can make you conscious of what it will take for you to be happy. You cannot change the world but that one small change that you bring about in your attitude can sometimes help change your entire life.
-        
-        My goal is to empower you to choose how to respond to your environment judiciously instead of being a victim to it. `,
-      education: [
-        {
-          degree: "B.Sc. Psychology",
-          school: "University of Delhi",
-          place: "Delhi",
-          year: "2012",
-        },
-      ],
-      places: ["Mumbai", "Delhi", "Bangalore"],
-      whatsapp: "+91 8779662139",
-      appointmentLink: "https://calendly.com/goyalaarush92/30min",
-    },
-    {
-      username: "@parul",
-      name: "Ms Parul Arora",
-      title: "Mental Health Facilitator",
-      avatar:
-        "https://res.cloudinary.com/dywkbcfp5/image/upload/w_200,h_200,c_thumb,g_face,r_max,bo_2px_solid_white,f_auto/v1646408215/oqlhixfgaaufpiytqimv.png",
-      description:
-        "I focus on a solution-oriented approach to help individuals overcome their circumstances and realise their true potential to lead a healthy and fulfilling life.",
-      available: true,
-      price: 2000,
-      sessionDuration: 30,
-      rating: 4.5,
-      verified: true,
-      serviceDescription: `
-        I work with clients to help them identify patterns in their behavior which cause problems, put them in a perspective and then facilitate unlearning them.
-    
-        By engaging with you, by attempting to enlighten that sensitive part of your personality that you have suppressed, I can make you conscious of what it will take for you to be happy. You cannot change the world but that one small change that you bring about in your attitude can sometimes help change your entire life.
-        
-        My goal is to empower you to choose how to respond to your environment judiciously instead of being a victim to it. `,
-      education: [
-        {
-          degree: "B.Sc. Psychology",
-          school: "University of Delhi",
-          place: "Delhi",
-          year: "2012",
-        },
-      ],
-      places: ["Mumbai", "Delhi", "Bangalore"],
-      whatsapp: "+91 8779662139",
-      appointmentLink: "https://calendly.com/goyalaarush92/30min",
-    },
-    {
-      username: "@chandana",
-      name: "Ms Chandana Bhatt",
-      title: "Mental Health Facilitator",
-      avatar:
-        "https://res.cloudinary.com/dywkbcfp5/image/upload/w_200,h_200,c_thumb,g_face,r_max,bo_2px_solid_white,f_auto/v1645093337/cbctthhvchikck3lsxim.png",
-      description:
-        "I focus on a solution-oriented approach to help individuals overcome their circumstances and realise their true potential to lead a healthy and fulfilling life.",
-      available: true,
-      price: 2000,
-      sessionDuration: 30,
-      rating: 4.5,
-      verified: true,
-      serviceDescription: `
-        I work with clients to help them identify patterns in their behavior which cause problems, put them in a perspective and then facilitate unlearning them.
-    
-        By engaging with you, by attempting to enlighten that sensitive part of your personality that you have suppressed, I can make you conscious of what it will take for you to be happy. You cannot change the world but that one small change that you bring about in your attitude can sometimes help change your entire life.
-        
-        My goal is to empower you to choose how to respond to your environment judiciously instead of being a victim to it. `,
-      education: [
-        {
-          degree: "B.Sc. Psychology",
-          school: "University of Delhi",
-          place: "Delhi",
-          year: "2012",
-        },
-      ],
-      places: ["Mumbai", "Delhi", "Bangalore"],
-      whatsapp: "+91 8779662139",
-      appointmentLink: "https://calendly.com/goyalaarush92/30min",
-    },
-  ];
+import psychs from "../../content/psych";
 
+const MainPage = () => {
+  
   const auth = getAuth(firebaseApp);
   const [user, loading, error] = useAuthState(auth);
   const router = useRouter();
@@ -196,11 +72,11 @@ const MainPage = () => {
             </Fade>
           </div>
           <div>
-            <div class="flex justify-center mt-3">
-              <div class="mb-3 w-5/6 md:w-96">
+            <div className="flex justify-center mt-3">
+              <div className="mb-3 w-5/6 md:w-96">
                 <input
                   type="text"
-                  class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                  className=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="exampleFormControlInput1"
                   placeholder=" Search by Name or Location "
                 />
@@ -208,7 +84,7 @@ const MainPage = () => {
             </div>
           </div>
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-3 px-2">
-            {psychologistsData.map((items, index) => (
+            {psychs.phychs.map((items, index) => (
               <div key={index}>
                 <PhycologistCard psych={items} />
               </div>
